@@ -1,151 +1,191 @@
-function addx(a, b) {
-  return a + b;
+var mmm = prompt("Enter your marks:");
+if (mmm >= 80 && mmm <= 100) {
+  alert("Distinction");
+} else if (mmm >= 50 && mmm < 80) {
+  alert("Pass");
+} else if (mmm >= 0 && mmm < 50) {
+  alert("Fail");
+} else {
+  alert("Invalid Marks");
 }
-console.log(addx(5, 3));
 
-function subby(x, y) {
-  return x - y;
-}
-console.log(subby(10, 4));
 
-function multipli(q, w) {
-  return q * w;
+var agy = prompt("Enter your age:");
+var mem = prompt("Are you a premium member? (yes/no)");
+if (agy >= 60 && mem == "yes") {
+  alert("Senior Premium Discount");
+} else if (agy >= 60) {
+  alert("Senior Discount");
+} else if (mem == "yes") {
+  alert("Premium Discount");
+} else {
+  alert("No Discount");
 }
-console.log(multipli(6, 7));
 
-function dividi(n, m) {
-  return n / m;
-}
-console.log(dividi(20, 4));
 
-function lefty(a, b) {
-  return a % b;
+var logg = prompt("Are you logged in? (yes/no)");
+var emmm = prompt("Is your email verified? (yes/no)");
+if (logg == "yes" && emmm == "yes") {
+  alert("Access granted");
+} else if (logg == "yes") {
+  alert("Please verify your email");
+} else {
+  alert("Please log in");
 }
-console.log(lefty(10, 3));
+var conAge = prompt("Enter your age:");
+var conCountry = prompt("Enter your country:");
+var conBan = prompt("Are you banned? (yes/no)");
+if (conBan == "yes") {
+  alert("You are banned from the contest");
+} else if (conAge < 18 || conAge > 35) {
+  alert("Not eligible due to age");
+} else if (conCountry != "Pakistan" && conCountry != "India") {
+  alert("Not eligible due to region");
+} else {
+  alert("You are eligible for the contest");
+}
 
-function goodNum(z) {
-  if (z > 0) {
-    return "Positive";
-  } else {
-    return "Not Positive";
-  }
-}
-console.log(goodNum(12));
 
-function badNum(k) {
-  if (k < 0) {
-    return "Negative";
-  } else {
-    return "Not Negative";
-  }
+var subs = prompt("Enter your subscription (premium/free):");
+var logg2 = prompt("Are you logged in? (yes/no)");
+if (subs == "premium" && logg2 == "yes") {
+  alert("Welcome Premium User");
+} else if (subs == "free" && logg2 == "yes") {
+  alert("Welcome Free User");
+} else if (logg2 == "no") {
+  alert("Please log in to continue");
+} else {
+  alert("Invalid subscription");
 }
-console.log(badNum(-9));
 
-function evenCheck(r) {
-  if (r % 2 == 0) {
-    return "Even";
-  } else {
-    return "Odd";
-  }
-}
-console.log(evenCheck(15));
 
-function sameSame(a1, b1) {
-  if (a1 == b1) {
-    return "Equal";
-  } else {
-    return "Not Equal";
-  }
+var pric = prompt("Enter product price:");
+var stok = prompt("Enter stock count:");
+var memm = prompt("Are you a member? (yes/no)");
+if (stok == 0) {
+  alert("Out of stock");
+} else if (pric > 1000 && stok > 0 && memm == "yes") {
+  alert("Buy now with discount");
+} else if (stok > 0) {
+  alert("Buy now");
+} else {
+  alert("Invalid product");
 }
-console.log(sameSame(7, 7));
 
-function biggerOne(p, q) {
-  if (p > q) {
-    return "Greater";
-  } else {
-    return "Smaller";
-  }
-}
-console.log(biggerOne(9, 15));
 
-function mixName(xx, yy) {
-  return xx + " " + yy;
+var wh = prompt("How many hours did you work?");
+var wk = prompt("Is it weekend? (yes/no)");
+if (wh == 0) {
+  alert("No work");
+} else if (wh > 40 && wk == "no") {
+  alert("Overtime");
+} else if (wk == "yes" && wh > 0) {
+  alert("Weekend work");
+} else {
+  alert("Regular hours");
 }
-console.log(mixName("Ali", "Raza"));
 
-function marksGame(mrks) {
-  if (mrks >= 40) {
-    return "Pass";
-  } else {
-    return "Fail";
-  }
-}
-console.log(marksGame(33));
 
-function ageTeen(xxAge) {
-  if (xxAge >= 13 && xxAge <= 19) {
-    return "Teenager";
-  } else {
-    return "Not a Teenager";
-  }
+var ag3 = prompt("Enter your age:");
+var gend = prompt("Enter your gender (male/female):");
+if (ag3 >= 13 && ag3 <= 19 && gend == "male") {
+  alert("Teen Male");
+} else if (ag3 >= 13 && ag3 <= 19 && gend == "female") {
+  alert("Teen Female");
+} else if (ag3 >= 20) {
+  alert("Adult");
+} else {
+  alert("Child");
 }
-console.log(ageTeen(17));
 
-function sayHello(whooo) {
-  return "Hello, " + whooo + "!";
-}
-console.log(sayHello("Ahmed"));
 
-function voteCheck(ag) {
-  if (ag >= 18) {
-    return "Eligible";
-  } else {
-    return "Not Eligible";
-  }
+var tempp = prompt("Enter temperature:");
+var humid = prompt("Enter humidity:");
+if (tempp >= 40 && humid >= 60) {
+  alert("Heatwave Alert");
+} else if (tempp >= 40 && humid < 60) {
+  alert("Hot and Dry");
+} else if (tempp <= 20) {
+  alert("Cool Weather");
+} else {
+  alert("Moderate");
 }
-console.log(voteCheck(21));
 
-function absFake(num) {
-  if (num >= 0) {
-    return num;
-  } else {
-    return -num;
-  }
+var scoree = prompt("Enter score (0-100):");
+if (scoree >= 90 && scoree <= 100) {
+  alert("Excellent");
+} else if (scoree >= 70) {
+  alert("Good");
+} else if (scoree >= 50) {
+  alert("Average");
+} else if (scoree >= 30) {
+  alert("Poor");
+} else if (scoree >= 0) {
+  alert("Fail");
+} else {
+  alert("Invalid Score");
 }
-console.log(absFake(-88));
 
-function heatCold(ttt) {
-  if (ttt > 30) {
-    return "Hot";
-  } else if (ttt < 10) {
-    return "Cold";
-  } else {
-    return "Normal";
-  }
+var isLog = prompt("Are you logged in? (yes/no)");
+var isEnroll = prompt("Are you enrolled? (yes/no)");
+var isBan = prompt("Are you banned? (yes/no)");
+if (isBan == "yes") {
+  alert("User is banned");
+} else if (isLog == "no") {
+  alert("Please log in");
+} else if (isEnroll == "no") {
+  alert("Enroll in course first");
+} else {
+  alert("Access granted");
 }
-console.log(heatCold(25));
 
-function triShape(a, b, c) {
-  if (a == b && b == c) {
-    return "Equilateral";
-  } else if (a == b || b == c || a == c) {
-    return "Isosceles";
-  } else {
-    return "Scalene";
-  }
+var spd = prompt("Enter your speed:");
+var hasLic = prompt("Do you have a license? (yes/no)");
+if (spd > 120) {
+  alert("License suspended");
+} else if (spd >= 100 && spd <= 120) {
+  alert("Warning");
+} else if (spd <= 100 && hasLic == "yes") {
+  alert("Normal driving");
+} else {
+  alert("Driving without license");
 }
-console.log(triShape(5, 5, 7));
 
-function priceCut(p1, disc) {
-  return p1 - (p1 * disc / 100);
-}
-console.log(priceCut(1000, 20));
 
-function checkPwd(pwd) {
-  if (pwd.length >= 8) {
-    return "Valid Password";
-  } else {
-    return "Too Short";
-  }
+var pay = prompt("Is payment complete? (yes/no/pending/failed)");
+var ship = prompt("Is it shipped? (yes/no)");
+if (pay == "failed") {
+  alert("Payment failed");
+} else if (pay == "pending") {
+  alert("Awaiting payment");
+} else if (pay == "yes" && ship == "no") {
+  alert("Preparing your order");
+} else if (pay == "yes" && ship == "yes") {
+  alert("Order on the way");
+} else {
+  alert("Invalid order status");
 }
-console.log(checkPwd("abc12345"));
+
+
+var bLevel = prompt("Enter battery level (0-100):");
+var chrg = prompt("Is it charging? (yes/no)");
+if (bLevel == 100) {
+  alert("Fully Charged");
+} else if (bLevel < 100 && chrg == "yes") {
+  alert("Charging...");
+} else if (bLevel < 20 && chrg == "no") {
+  alert("Low Battery");
+} else {
+  alert("Battery OK");
+}
+
+
+var brow = prompt("Enter your browser:");
+var dev = prompt("Enter your device (Mobile/Desktop):");
+if (brow == "Chrome" && dev == "Desktop") {
+  alert("Full features enabled");
+} else if (brow == "Chrome" && dev == "Mobile") {
+  alert("Limited mobile features");
+} else {
+  alert("Please switch to Chrome");
+}
